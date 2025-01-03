@@ -1,0 +1,65 @@
+body{
+    background-color: gray;
+    margin: 0px;
+}
+
+.web1{
+    width: 90%;
+    height: 60px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+
+.web2 {
+    margin: 50px;
+    width: 30%;
+    height: 300px;
+    background-color: rgb(200, 5, 183);
+    color: rgb(255, 254, 254);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:  40px;
+
+    margin-top: 50px;
+    margin-left: 300px;
+
+}
+
+.web3 {
+    margin: -63px;
+    width: 40%;
+    height: 300px;
+    background-color: rgb(247, 112, 16);
+    color: rgb(255, 254, 254);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:  40px;
+
+
+    margin-left: 400px;
+
+}
+
+.web4 {
+    margin: 10px;
+    width: 90%;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 254, 254);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding:  20px;
+
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 30px;
+    text-align: center;
+
+
+
+}

@@ -1,0 +1,66 @@
+body{
+    background-color: gray;
+}
+
+.principal{
+    
+    background-color: white;
+    font-size: 20px;
+    padding: 0;
+    margin-left: 200px;
+    margin-right: 200px ;
+
+}
+.title{
+    width: ajust;
+    height: 20px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    margin-top: 20px;
+
+}
+
+.pagina{
+    height: 300px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    padding:  40px;
+    display: flex;
+
+    margin-top: 50px;
+    text-align: center;
+
+    margin-left: 150px;
+
+
+}
+
+.web1{
+    width: 400px;
+    background-color: blueviolet;
+
+
+}
+
+.web2{
+    width: 200px;
+    background-color: orange;
+
+}
+
+.content{
+
+    height: 10px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+    margin-top: 20px;
+    text-align: center;
+
+}

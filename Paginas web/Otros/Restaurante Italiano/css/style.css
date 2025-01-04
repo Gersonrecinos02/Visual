@@ -13,10 +13,7 @@ html {
 
 body {
     font-size: 1.6rem;
-<<<<<<< HEAD
     overflow-x: hidden;
-=======
->>>>>>> 2368b4810bb420c00b3c4d5240798402a891fd22
 }
 
 *,*::after, *::before {
@@ -38,13 +35,10 @@ h1, h2 {
 h3, p ,a {
     font-family: var(--parrafos);
 }
-<<<<<<< HEAD
 
 img {
     max-width: 100%;
 }
-=======
->>>>>>> 2368b4810bb420c00b3c4d5240798402a891fd22
 .verde {
     color: var(--verde);
 }
@@ -55,7 +49,6 @@ img {
 .ocultar {
     display: none;
 }
-<<<<<<< HEAD
 .btn-cerrar{
     font-size: 3rem;
     font-weight: bold;
@@ -140,11 +133,6 @@ img {
     background-color: var(--oscuro);
     position: relative;
     z-index: 5;
-=======
-/* Encabezado */
-.contenedor-navegacion {
-    background-color: var(--oscuro);
->>>>>>> 2368b4810bb420c00b3c4d5240798402a891fd22
 }
 
 .contenido-navegacion {
@@ -162,7 +150,6 @@ img {
 
 .navegacion a {
     text-decoration: none;
-<<<<<<< HEAD
     font-size: 2.2rem;
     padding: 1.5rem;
     padding-left: 4rem;
@@ -198,10 +185,6 @@ img {
 }
 .hamburguesa:hover {
     cursor: pointer;
-=======
-    font-size: 2rem;
-    padding: 1rem;
->>>>>>> 2368b4810bb420c00b3c4d5240798402a891fd22
 }
 .hamburguesa span {
     background-color: var(--blanco);
@@ -210,7 +193,6 @@ img {
     height: .5rem;
     margin: .5rem;
 }
-<<<<<<< HEAD
 
 /* video */
 .contenido-header {
@@ -599,5 +581,3 @@ video {
     font-size: 2rem;
 }
 
-=======
->>>>>>> 2368b4810bb420c00b3c4d5240798402a891fd22

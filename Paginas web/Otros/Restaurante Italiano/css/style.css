@@ -566,6 +566,7 @@ video {
     width: 100%;
 }
 
+
 .info input[type="submit"] {
     padding: .5rem 2rem;
     font-size: 1.8rem;
@@ -579,3 +580,4 @@ video {
     padding: 2rem;
     font-size: 2rem;
 }
+

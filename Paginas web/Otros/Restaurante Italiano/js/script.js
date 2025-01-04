@@ -53,6 +53,7 @@ const observer = new IntersectionObserver((entries, observer)=>{
         }
     });
 });
+
     
 imagenes.forEach(imagen=>{
     

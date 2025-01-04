@@ -1,4 +1,5 @@
 const menu =document.querySelector('.hamburguesa');
+<<<<<<< HEAD
 const navegacion = document.querySelector('.navegacion');
 const imagenes = document.querySelectorAll('img');
 const btnTodos = document.querySelector('.todos');
@@ -58,10 +59,16 @@ const observer = new IntersectionObserver((entries, observer)=>{
 imagenes.forEach(imagen=>{
     
     observer.observe(imagen);
+=======
+
+document.addEventListener('DOMContentLoaded',()=>{
+    sumar2();
+>>>>>>> 2368b4810bb420c00b3c4d5240798402a891fd22
 });
 
 
 
+<<<<<<< HEAD
 const cerrarMenu = (boton, overlay) => {
     boton.addEventListener('click',()=>{ 
         navegacion.classList.add('ocultar')
@@ -120,5 +127,11 @@ const limpiarHtml = (contenedor) => {
     while(contenedor.firstChild){
         contenedor.removeChild(contenedor.firstChild);
     }
+=======
+
+// arrow function o function expression 
+const sumar2 = () => {
+    console.log('funcion de flecha', 3+3);
+>>>>>>> 2368b4810bb420c00b3c4d5240798402a891fd22
 
 }

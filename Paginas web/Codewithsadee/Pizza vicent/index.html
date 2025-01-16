@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Vicent</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="shedule">
+                <img src="img/icon_phone.png" alt="">
+                <div class="shedule-right">
+                    <div class="phone">+1 56465 46546</div>
+                    <div class="time">8:00 am - 11:00 pm</div>
+                </div>
+            </div>
+            <div class="logo"><img src="img/logo.png" alt=""></div>
+            <div class="cart">
+                <img src="img/icon_cart.png" alt="">
+                <div class="cart-left">
+                    <div class="amount">$0.00</div>
+                    <div class="items">0 items - View Card</div>
+                </div>
+            </div>
+
+            <div class="menu-btn active">
+                <span></span><span></span><span></span><span></span>
+            </div>
+
+        </div>
+
+        <ul class="nav active">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contac</a></li>
+            
+        </ul>
+    </header>
+
+
+    <main>
+        <div class="hero">
+            <div class="imgBx">
+                <img src="img/pizza_2.png" alt="">
+            </div>
+            <div class="contentBx">
+                <h1>VICENT PIZZA</h1>
+                <H2>MAKING PEOPLE HAPPY</H2>
+                <p>Italian Pizza With Cherry Tomatoes and Green Basil</p>
+                <div class="btn">View Menu</div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const menuBtn = document.querySelector('.menu.btn');
+        const nav = document.querySelector('.nav');
+
+        menuBtn .addEventListener('click', function (){
+            this.classList.toggle('active');
+            nav.classList.toggle('active');
+        });
+    </script>
+
+</body>
+
+</html>

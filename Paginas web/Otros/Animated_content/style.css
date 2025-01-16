@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/* Container */
+
+.container {
+    max-width: 1440px;
+    min-height: 100vh;
+    margin: auto;
+    display: 40px;
+    display: grid;
+    justify-content: center;
+    align-items:     center;
+    grid-template-columns: repeat(auto-fil, minmax(300px, 350px));
+    grid-gap: 40px;
+    font-family: "Poppins", serif;
+    
+}
+
+/* #card */
+.card {
+    --hue: 214;
+    --card-color: hsl(var(--hue), 80%, 40%);
+    --shadow-color: hsla(var(--hue), 80%, 40%, 0.2);
+
+    position: relative;
+    padding: 50px 30px;
+    text-align: center;
+    box-shadow: 0 10px 15px #0001;
+    transition: all 0.5s ease;
+}
+
+.card:hover{ box-shadow: 0 20px 30px #0002; }
+
+    .card::after {
+        --rigth: 100%;/* variable for inset property */
+
+        content: '';
+        position: absolute;
+        inset: calc(100% - 3px) var(--rigth) 0 0;
+        background: var(--card-color);
+        transition: all 0.5s ease;
+    }
+
+    .card:hover::after {--rigth: 0; }
+
+    /* card head style */
+
+    .card_head {
+        position: relative;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card_head ion-icon {
+        font-size: 3em;
+        color: var(--card-color);
+        --ionicon-stroke-width: 0.5em
+    }
+
+    .card_head .rounded-border {
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border: 1px solid var(--card-color);
+        box-shadow: inset 0 0 20px var(--shadow-color),
+                          0 0 20px var(--shadow-color);
+        border-radius: 10em;
+        transform: rotate(-45deg);
+        animation: rotate-360 2s linear infinite;
+        animation-play-state: paused; 
+    }
+    /* when hover on card the animation willl be play */
+
+    .card:hover .rounded-border {animation-play-state: running }
+
+    @keyframes  rotate-360 {
+        from {  transform: rotate(-45deg);}
+        to {  transform: rotate(315deg);}
+    }
+
+    .card_head .circle {
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        background: var(--card-color);
+        border-radius: 100%;
+        top: -7px;
+        transform: translateX(-50%);
+        box-shadow: 0 118px 0 var(--card-color);
+    }
+
+/* card bodu style */
+
+.card_body { margin-top: 30px;}
+
+    .card_body h3 {
+        font-size: 1.5em;
+        color: hsl(229, 9%, 30%);
+        margin-bottom: 10px;
+    }
+
+    .card_body p {
+        color: hsl(229, 11%, 36%);
+        margin-bottom: 30px;
+    }
+
+    .card_body .btn {
+
+        text-decoration: none;
+        color: var(--card-color);
+        font-weight: 600;
+        font-size: 1.05em;
+        opacity: 0.9;
+    }
+    .card_body .btn:hover { opacity: 1;}
+
+.card--purple {--hue: 270;}
+.card--mountain_meadow {--hue: 168;}
+.card--pictorial_carmine{--hue: 340;}

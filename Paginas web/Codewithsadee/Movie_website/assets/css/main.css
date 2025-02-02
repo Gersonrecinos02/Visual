@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url(./variable.css);
+
+@import url(./reset.css);
+
+/* reused style */
+
+header, nav {
+    background: var(--rich-black-fogra-29);
+}
+
+.navbar,
+.banner {
+    padding: 0 var(--px);
+}
+
+/* Main container style */
+
+.container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+/* navbar style */
+
+.navbar {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* small screen menu button style */
+
+.navbar-menu-btn {
+    display: none;
+}
+
+/* navbar navigation syle */
+nav {
+    margin-right: 200px;
+}
+
+.navbar-nav {
+    display: flex;
+}
+
+.navbar-nav li:not(:last-child) {
+    margin-right: 60px;
+}
+
+.navbar-link {
+    font-size: var( --fs-sm);
+    font-weight: var(--fw-5);
+}
+
+.navbar-link:hover {
+    color: var( --light-azure);
+}
+
+/* live indicator style */
+
+.indicator {
+    position: relative;
+}
+
+.indicator::after {
+    content: '';
+    background: var( --live-indicator);
+    position: absolute;
+    top: calc(50% -1px);
+    right: -15px;
+    width: 4px;
+    height: 4px;
+    box-shadow: 0 0 0 2px var(  --live-indicator-shadow);
+    border-radius: 5px;
+}
+
+/* navbar form and buttom style */
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-form {
+    position: relative;
+    margin-right: 50px;
+}
+
+.navbar-form-search {
+    background: var(--oxford-blue);
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 15px;
+    color: var(--off-white);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-5);
+}
+
+.navbar-form-btn {
+    background: var(--oxford-blue);
+    position: absolute;
+    top: calc(50% - 10px);
+    right: 10px;
+}
+
+.navbar-form-btn ion-icon,
+.navbar-search-btn ion-icon {
+    font-size: 20px;
+    color: var(--light-azure);
+   --ionicon-stroke-width: 50px;
+}
+
+.navbar-form-btn:hover ion-icon,
+.navbar-form-search::placeholder {
+    color: var(--off-white);
+}
+
+/* navbar-form close  */
+
+.navbar-for-close,
+.navbar-search-btn {
+    display: none;
+}
+
+.navbar-sigin {
+    display: flex;
+    align-items: center;
+    font-size: var(--fs-sm);
+}
+
+.navbar-sigin ion-icon {
+    font-size: 22px;
+    color: var(--light-azure);
+    margin-left: 5px;
+    --ionicon-stroke-width: 30px
+}
+
+.navbar-sigin:hover span {
+    color: var(--light-azure);
+}
+
+
+/* Banner */
+
+.banner {
+    margin-bottom: 60px;
+}
+
+.banner-card {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.banner-img {
+    object-position: top;
+}
+
+.banner-card:hover .banner-img {
+    transform: scale(1.1);
+}
+
+.banner-card .card-content {
+    position: absolute;
+    right: 80px;
+    bottom: 60px;
+    left: 80px;
+}
+
+.banner-card .card-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.banner-card .card-info div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.banner-card .card-info ion-icon {
+    font-size: 20px;
+    color: var(--azure);
+    margin-right: 5px;
+}
+
+.banner-card .card-info span {
+    font-weight: var(--fw-6);
+}
+
+.banner-card .card-info .quality {
+    background: var(--azure);
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-weight: var(--fw-7);
+}
+
+.banner-card .card-title {
+    font-size: 3em;
+    color: var(--white);
+    text-shadow: 2px 0 2px #0007;
+    
+}

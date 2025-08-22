@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    --bg-color: color-mix(in srgb, #f62 70%, #fff);
+    --chat-bg-color: #fff;
+    --dark-color: #f62;
+    --text-color: #44;
+    background-color: var(--bg-color);
+    font-family: Montserrat;
+}
+
+.chat{
+    max-width: clamp(300px, 60%, 900px);
+    background-color: var(--chat-bg-color);
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+.chat__user {
+    display: flex;
+    align-items: center;
+}
+
+.chat__user img {
+    max-width: 2.6rem;
+    border-radius: 50%;
+}
